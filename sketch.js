@@ -83,6 +83,19 @@ function draw() {
           set.velocityEach = 0
         
 //Mude o gameState (estado do jogo) para End
+        gameState = end(){
+          cashG.destroyEach(); 
+          diamondsG.destroyEach();
+          jwelleryG.destroyEach(); 
+          swordGroup.destroyEach();
+          cashG.setVelocityYEach(0); 
+          diamondsG.setVelocityYEach(0); 
+          jwelleryG.setVelocityYEach(0);
+          swordGroup.setVelocityYEach(0);
+          
+          
+          
+        }
 //destrua todos os grupos
 // defina setvelocityEach como 0 para todos os grupos
     }
